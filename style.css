@@ -1,0 +1,376 @@
+/* Reset some default styling */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+    position: center;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #f4b400;
+}
+
+.navbar .nav-links .cta {
+    background-color: #f4b400;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-links .cta:hover {
+    background-color: #e0a700;
+}
+.navbar .company-name {
+    color: inherit; /* This will make the link take the color of its parent element */
+    text-decoration: none; /* This will remove the underline */
+}
+
+
+/* Hero section styling */
+.hero {
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('lap2.jpeg') no-repeat center center/cover;
+    z-index: -1;
+    animation: slide 20s infinite;
+}
+
+/* Title styling */
+
+
+@keyframes slide {
+    0% { background: url('im1.jpeg') no-repeat center center/cover; }
+    12.5% { background: url('im2.jpeg') no-repeat center 20%/cover; }
+    25% { background: url('im3.jpeg') no-repeat center center/cover; }
+    37.5% { background: url('im4.jpeg') no-repeat center 30%/cover; }
+    50% { background: url('im5.jpeg') no-repeat center center/cover; }
+    62.5% { background: url('im6.jpeg') no-repeat center 25%/cover; }
+    75% { background: url('im7.jpeg') no-repeat center 25%/cover; }
+    87.5% { background: url('im8.jpeg') no-repeat center 5%/cover; }
+    100% { background: url('im9.jpeg') no-repeat center center/cover; }
+}
+
+
+
+
+.slideshow {
+    width: 100%;
+    height: 70vh;
+    animation: slide 40s infinite; /* Adjust the duration as needed */
+    background-size: cover; /* Ensure the background covers the entire area */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero .btn-primary, .hero .btn-secondary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero .btn-primary {
+    background-color: #007BFF;
+}
+
+.hero .btn-secondary {
+    background-color: #6c757d;
+}
+
+.hero .btn-primary:hover, .hero .btn-secondary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for depth */
+}
+
+.hero p {
+    font-size: 1.5em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Add shadow for depth */
+    margin-bottom: 30px;
+}
+
+.hero .btn-primary, .hero .btn-secondary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero .btn-primary {
+    background-color: #007BFF;
+}
+
+.hero .btn-secondary {
+    background-color: #6c757d;
+}
+
+.hero .btn-primary:hover, .hero .btn-secondary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+
+
+/* Affilaite section styling */
+.about {
+    background-color: #e3f2fd;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0d47a1;  /* Dark blue color */
+    text-align: center !important;
+}
+
+.about .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify; /* Justify the text to ensure equal line lengths */
+}
+
+
+
+
+
+/* Join Researchers Section */
+.contact {
+    background-color: #e3f2fd;  /* Light blue background */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0d47a1;  /* Dark blue color */
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+
+
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+.more {
+    background: linear-gradient(135deg, #e9fdec, #effffd, #fff5fc, #eaf3fd);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    padding: 50px 0;
+}
+
+.more h1 {
+    text-align: center; /* Center the h2 element */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.more h2 {
+    text-align: center; /* Center the h2 element */
+    font-size: 2.0em;
+    margin-bottom: 20px;
+}
+
+.more .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify; /* Justify the text content */
+}
+
+.more ul li {
+    margin-bottom: 15px;
+    text-align: left; /* Left-align list items */
+}
+
+ul li strong {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Animation for the background to add a smooth transition effect */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+/* Ensure the parent container has text-align: center; */
+.about .container, 
+.more .container {
+    text-align: center; /* Center all inline-block elements within */
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block; /* Center the h2 based on its content width */
+    text-align: center; /* Ensure the text itself is centered within the h2 */
+}
+
+h2::before,
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 50%; /* Start with half-width underlines */
+    background-color: #f58b00;
+    transition: width 0.3s ease-in-out;
+}
+
+h2::before {
+    left: 0;
+}
+
+h2::after {
+    right: 0;
+}
+
+h2:hover::before,
+h2:hover::after {
+    width: 0; /* Shrink the underline on hover */
+}
+
+
+
+
+
+/* Photo section styling */
+.photo-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between the images */
+}
+
+.profile-photo {
+    border-radius: 50%; /* Make the image circular */
+    max-width: 200px; /* Adjust the size as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #f58b00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
